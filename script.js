@@ -35,8 +35,11 @@ function count() {
     //    console.log(words.length)
     //    console.log(words)
 
+
+        let excludeSpacechar = input.replace(/\s+/g, '');
+
     //character count
-    charCount.innerText = input.length + " Characters";
+    charCount.innerText = excludeSpacechar.length + " Characters";
 
 
 
